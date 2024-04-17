@@ -1,0 +1,7 @@
+<% if (message) { %>
+    <% Object.keys(message).forEach((key)=>{ %>
+        <%  message[key].forEach((flash)=>{ %>
+            <p class="flash-error"><%= flash %></p>
+            <%  }) %>
+        <%  }) %>
+<% } %>
